@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-01-30T20:48:38 IST" name="Default suite" finished-at="2024-01-30T20:48:54 IST" duration-ms="16894">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:jarvis.TestRunner@76b1e9b8]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-01-30T20:48:38 IST" name="Default test" finished-at="2024-01-30T20:48:54 IST" duration-ms="16894">
+      <class name="jarvis.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:jarvis.TestRunner@76b1e9b8]" started-at="2024-01-30T20:48:38 IST" name="setUpClass" finished-at="2024-01-30T20:48:38 IST" duration-ms="342" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@77010a30]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:jarvis.TestRunner@76b1e9b8]" started-at="2024-01-30T20:48:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-30T20:48:38 IST" duration-ms="166" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Passing parameter from Step"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Study Parameterization In Cucumber"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:jarvis.TestRunner@76b1e9b8]" started-at="2024-01-30T20:48:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-30T20:48:38 IST" duration-ms="26" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Passing data table as parameter"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Study Parameterization In Cucumber"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.datatable.CucumberDataTableException">
+            <message>
+              <![CDATA[Can't convert DataTable to Map<java.lang.String, java.lang.String>.
+There is more then one value per key. Did you mean to transform to Map<java.lang.String, List<java.lang.String>> instead?]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.datatable.CucumberDataTableException: Can't convert DataTable to Map<java.lang.String, java.lang.String>.
+There is more then one value per key. Did you mean to transform to Map<java.lang.String, List<java.lang.String>> instead?
+at io.cucumber.datatable.CucumberDataTableException.cantConvertToMap(CucumberDataTableException.java:27)
+at io.cucumber.datatable.CucumberDataTableException.keyValueMismatchException(CucumberDataTableException.java:47)
+at io.cucumber.datatable.DataTableTypeRegistryTableConverter.toMap(DataTableTypeRegistryTableConverter.java:282)
+at io.cucumber.datatable.DataTable.asMap(DataTable.java:278)
+at io.cucumber.datatable.DataTable.asMap(DataTable.java:259)
+at com.jarvis.stepdefinations.Parameterization.acceptRTOCodes(Parameterization.java:46)
+at ✽.I have <RTO_Codes> and <State_Name>(file:///C:/Users/yogesh/eclipse-workspace/jarvis/src/test/resources/Features/Parameterization.feature:10)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.datatable.CucumberDataTableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:jarvis.TestRunner@76b1e9b8]" started-at="2024-01-30T20:48:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-30T20:48:54 IST" duration-ms="16251" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify error message when user enters invalid phone nuumber"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["End OTP to user for the sake of registration to the app"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:jarvis.TestRunner@76b1e9b8]" started-at="2024-01-30T20:48:54 IST" name="tearDownClass" finished-at="2024-01-30T20:48:54 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- jarvis.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
